@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+<div class="tab" style="    overflow: hidden;    border: 1px solid #ccc;  padding: 14px 14px 14px 14px;  background-color: rgba(85,74,172,.05)">
+    <button class="tablinks" onclick="openCity(event, 'London0')" style="background-color: white; float: left; border: none; outline: none; cursor: pointer; padding: 14px; margin: 14px; transition: 0.3s; color:#4E0000;">Older learners</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris0')" style="background-color: white; float: left; border: none; outline: none; cursor: pointer; padding: 14px; margin: 14px; transition: 0.3s; color:#4E0000;">Middle learners</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo0')" style="background-color: white; float: left; border: none; outline: none; cursor: pointer; padding: 14px; margin: 14px; transition: 0.3s; color:#4E0000;">Young learners</button>
+</div>
+
+<div id="London0" class="tabcontent" style="display: none;    padding: 6px 12px;    border: 1px solid #ccc;    border-top: none;">
+    <div style="border: 1px solid lightgrey;    border-radius: 5px; padding: 10px 10px 10px 10px; background-color: #F8F8FF;">
+        <ol>
+      <li>Can give a definition of hate speech and explain specific characteristics of hate speech online
+      </li>
+      <li>Can explain his/her opinion about the relation between hate speech and freedom of speech and formulate arguments in favour of his/her opinion.
+      </li>
+      <li>Can tell the difference between hate speech and ordinary rudeness or hateful behaviour
+      </li>
+      <li>Can describe national legislation concerning hate speech online.
+      </li>
+      <li>Can explain concepts like: racism, xenophobia, islamophobia, Romaphobia, antisemitism, chrystianofobia, homophobia, misogyny, ageism, disability discrimination
+      </li>
+      <li>Can explain what stereotype is, how it is formed and describe positive and negative influence of stereotypes on a person
+      </li>
+      <li>Can explain how stereotypes influence prejudice, discrimination and hate and give examples of the danger of allowing prejudice against others to take root and spread.
+      </li>
+      <li>Can give examples of historical and contemporary events when hate speech facilitated hate crime.
+      </li>
+      <li>Can make a critical analysis of examples of hate speech online (targets, intention, scope, severeness, possible dangers).
+      </li>
+      <li>Can explain how to report hate speech encountered on the Internet.</li>
+     </ol>
+    </div>
+</div>
+
+<div id="Paris0" class="tabcontent" style="display: none;    padding: 6px 12px;    border: 1px solid #ccc;    border-top: none;">
+    <div style="border: 1px solid lightgrey;    border-radius: 5px; padding: 10px 10px 10px 10px; background-color: #F8F8FF;">
+       <ol>
+    
+   <li> Can explain why it is not possible to characterize a person only based on sex, nationality, religion, profession or other fragment of identity
+      </li>
+      <li>Can explain what stereotype, prejudice and discrimination are
+      </li>
+      <li>Can explain how different forms of expression online influence on perception of various groups of people
+      </li>
+      <li>Can give definition of hate speech online
+      </li>
+      <li>Can explain how hate speech is linked with physical violence against minority groups
+     </li>
+      <li>Can give examples of prejudice and violence in relation to minority groups, including hate crimes and crimes against humanity (contemporary and in history)
+      </li>
+      <li>Can express argumentative opinion if hate speech violates human rights
+      </li>
+      <li>Can give examples of hate speech encountered in the internet
+      </li>
+      <li>Can express his/her opinion if people should react on hate speech encountered in the internet and formulate arguments in favour his/her opinion
+      </li>
+      <li>Expresses his/her opinion how should people react on hate speech, encountered in the internet</li>
+      </ol>
+
+    </div>
+</div>
+
+<div id="Tokyo0" class="tabcontent" style="display: none;    padding: 6px 12px;    border: 1px solid #ccc;    border-top: none;">
+    <div style="border: 1px solid lightgrey;    border-radius: 5px; padding: 10px 10px 10px 10px; background-color: #F8F8FF;">
+        <ol><li>Can describe her/his needs and emotions (in the situation when he/she is hurt and when he/she hurts the other person)
+      </li>
+      <li>Is able to describe what other people are feeling based on their reactions and body language seen online and offline
+      </li>
+      <li>Can describe his/ her belonging to certain groups of people (based on interests and innate qualities)
+      </li>
+      <li>Can describe how her/his classmates are different, but understands, that all people are equal despite differences
+      </li>
+      <li>Can explain logically why people should not be treated badly if they look different and don’t have the latest digital devices and gadgets
+      </li>
+      <li>Has positive image of other religions and cultures
+      </li>
+      <li>Expresses compassion for other people who are being treated unfairly
+      </li>
+      <li>Is able to explain why and how words can hurt people
+      </li>
+      <li>Can recognize when a companion needs his/her help
+      </li>
+      <li>Is able to evaluate information online and offline (where is comes from, how it relates to what they already know, why it is important or not) and determine if it is true.</li>
+    </ol>
+
+    </div>
+</div>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</body>
+</html> 
